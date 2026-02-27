@@ -90,42 +90,56 @@ Build a pipeline that ingests open satellite imagery *(Sentinel/Landsat)*, perfo
 
 ---
 
-## 🏎️ PIT LANE TIMELINE
+<div align="center"><img src="schedule-header.svg" width="860" alt="Pit Lane Schedule"/></div>
 
-> *The race is 24 hours. Every sector counts. Here's your strategy board.*
-
-<br/>
+<div align="center"><img src="feb28-header.svg" width="860" alt="February 28"/></div>
 
 <div align="center">
 
-**— — — — — — — — — FEB 28 — — — — — — — — —**
-
-</div>
-
 | 🕐 Time | Pit Stop | Status |
-|:-------:|:--------:|:-------|
+|:-------:|:--------:|:------:|
 | **8:30 AM** | 🔴 CHECK-IN | Reporting — scrutineering & paddock entry |
 | **9:00 AM** | 📋 OFFICIALS | Registrations open — driver livery collection |
 | **10:30 AM** | 🟡 FORMATION LAP | Opening Ceremony — system diagnostics complete |
 | **12:00 PM** | 🟢 **RACE START** | **Green flag! 24-hour clock begins. ERS enabled.** |
-| **5:00 PM** | ☕ REFRESH | High Tea — fuel & tire management |
-| **7:00 PM** | 🛠️ PIT STOP I | Mentorship Round I — mid-race strategy tuning |
-| **8:00 PM** | 🍽️ DINNER | Evening fuel stop |
-
-<div align="center">
-
-**— — — — — — — — — MAR 1 — — — — — — — — —**
 
 </div>
 
+<div align="center"><img src="food-divider.svg" width="860" alt="Fuel Stops"/></div>
+
+<div align="center">
+
 | 🕐 Time | Pit Stop | Status |
-|:-------:|:--------:|:-------|
+|:-------:|:--------:|:------:|
+| **5:00 PM** | ☕ HIGH TEA | Afternoon refresh — fuel & tire management |
+| **7:00 PM** | 🛠️ PIT STOP I | Mentorship Round I — mid-race strategy tuning |
+| **8:00 PM** | 🍽️ DINNER | Evening fuel stop — energy replenishment |
+
+</div>
+
+<div align="center"><img src="mar1-header.svg" width="860" alt="March 1"/></div>
+
+<div align="center">
+
+| 🕐 Time | Pit Stop | Status |
+|:-------:|:--------:|:------:|
 | **8:30 AM** | 🌅 BREAKFAST | Morning boost — fresh tires, new strategy |
 | **9:00 AM** | 🏎️ FINAL STINT | Mentorship Round II — push for fastest lap |
-| **12:00 PM** | 🏁 **RACE END** | **Chequered flag — submissions closed. Cool down lap.** |
+| **12:00 PM** | 🏁 **RACE END** | **Chequered flag — submissions closed** |
+
+</div>
+
+<div align="center"><img src="food-divider.svg" width="860" alt="Fuel Stops"/></div>
+
+<div align="center">
+
+| 🕐 Time | Pit Stop | Status |
+|:-------:|:--------:|:------:|
 | **12:15 PM** | 🥗 LUNCH | Post-race recovery mode |
 | **1:00 PM** | ⚖️ JUDGING | Technical inspection — stewards review begins |
 | **4:00 PM** | 🏆 **PODIUM** | **Results & Closing Ceremony — Victory lap!** |
+
+</div>
 
 ---
 
