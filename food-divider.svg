@@ -1,0 +1,41 @@
+<svg width="860" height="38" viewBox="0 0 860 38" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="50%" stop-color="#0d0a00"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="yl" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#FFD700" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#FFD700" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="860" height="38" fill="url(#bg)"/>
+  <rect width="860" height="1" fill="url(#yl)" opacity="0.5"/>
+
+  <!-- Food icons spread across -->
+  <text x="100" y="26" font-size="16" text-anchor="middle">🍽️</text>
+  <text x="220" y="26" font-size="16" text-anchor="middle">☕</text>
+  <text x="340" y="26" font-size="16" text-anchor="middle">🥗</text>
+  <text x="430" y="26" font-family="'Courier New',monospace" font-size="8" fill="#FFD700"
+        text-anchor="middle" letter-spacing="4" filter="url(#glow)">PIT CREW FUEL STOPS</text>
+  <text x="520" y="26" font-size="16" text-anchor="middle">🍳</text>
+  <text x="640" y="26" font-size="16" text-anchor="middle">🫖</text>
+  <text x="760" y="26" font-size="16" text-anchor="middle">🍽️</text>
+
+  <!-- Dotted separator lines -->
+  <line x1="130" y1="19" x2="195" y2="19" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="248" y1="19" x2="315" y2="19" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="368" y1="19" x2="390" y2="19" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="470" y1="19" x2="495" y2="19" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="547" y1="19" x2="615" y2="19" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="668" y1="19" x2="735" y2="19" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <rect width="860" height="1" y="37" fill="url(#yl)" opacity="0.3"/>
+</svg>

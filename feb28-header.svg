@@ -1,0 +1,43 @@
+<svg width="860" height="44" viewBox="0 0 860 44" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="40%" stop-color="#150500"/>
+      <stop offset="60%" stop-color="#150500"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="rl" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF1801" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#FF1801" stop-opacity="0.8"/>
+      <stop offset="80%" stop-color="#FF1801" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FF1801" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="860" height="44" fill="url(#bg)"/>
+  <rect width="860" height="1" fill="url(#rl)"/>
+
+  <!-- Race flag left -->
+  <text x="60" y="28" font-size="20" text-anchor="middle">🏁</text>
+
+  <!-- Animated blinking dot -->
+  <circle cx="120" cy="22" r="4" fill="#FF1801" filter="url(#glow)">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite"/>
+  </circle>
+
+  <text x="430" y="28" font-family="'Courier New',monospace" font-size="14" font-weight="bold"
+        fill="#FF1801" text-anchor="middle" letter-spacing="8" filter="url(#glow)">FEBRUARY 28</text>
+
+  <!-- Animated blinking dot right -->
+  <circle cx="740" cy="22" r="4" fill="#FF1801" filter="url(#glow)">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Race flag right -->
+  <text x="800" y="28" font-size="20" text-anchor="middle">🏁</text>
+
+  <rect width="860" height="1" y="43" fill="url(#rl)"/>
+</svg>
