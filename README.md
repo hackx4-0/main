@@ -1,4 +1,4 @@
-<div align="center"><img src="banner.svg" width="860" alt="HackX 4.0 Banner"/></div>
+<div align="center"><img src="banner.svg" width="860" alt="HackX 4.0 Banner"/></div> 
 
 <div align="center">
 
