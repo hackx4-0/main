@@ -15,13 +15,21 @@
 
 ---
 
-## ⚡ IGNITION
+<div align="center"><img src="racetrack.svg" width="860" alt="HackX 4.0 Race Circuit"/></div>
 
-**HackX 4.0** is a **24-hour offline flagship hackathon** at **NMIMS, Navi Mumbai** — where the sharpest student developers, designers, and problem-solvers strap in and race to build real-world solutions at full throttle.
+<br/>
 
-Teams of **2–4** sprint from concept to deployment in one relentless session of critical thinking, fast coding, and bold innovation. With **₹75,000** on the line, **Logitech gear**, **internship opportunities**, and goodies + certificates for every racer — this is your Grand Prix moment.
+<div align="center">
 
-> *"Lights out. And away we go."*
+### 🏎️ &nbsp; `24 HOURS` &nbsp;·&nbsp; `NMIMS NAVI MUMBAI` &nbsp;·&nbsp; `TEAMS OF 2–4` &nbsp;·&nbsp; `₹75,000`
+
+</div>
+
+<br/>
+
+> **HackX 4.0** is not just a hackathon — it's a **24-hour Grand Prix of ideas**, hosted at **NMIMS, Navi Mumbai**. The sharpest student developers, designers, and problem-solvers strap in, hit the throttle, and race to build real-world solutions from concept to deployment — all in one relentless, non-stop sprint.
+>
+> Think critically. Code fast. Innovate boldly. **This is your race.**
 
 ---
 
