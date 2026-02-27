@@ -1,0 +1,401 @@
+<svg width="860" height="220" viewBox="0 0 860 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050505"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+
+    <!-- Track glow -->
+    <filter id="trackGlow" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="carGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="smokeBlur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+    </filter>
+
+    <!-- Speed streak gradient -->
+    <linearGradient id="streak" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF1801" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#FF1801" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Crowd gradient -->
+    <linearGradient id="crowd" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#050510"/>
+    </linearGradient>
+
+    <!-- Pit lane gradient -->
+    <linearGradient id="pitGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#111"/>
+      <stop offset="50%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#111"/>
+    </linearGradient>
+
+    <!-- Red glow radial -->
+    <radialGradient id="hotGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF1801" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FF1801" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Tire marks -->
+    <linearGradient id="tireSmoke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#444" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#444" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- The oval track path used for animateMotion -->
+    <path id="trackPath" d="
+      M 180,110
+      L 480,40
+      Q 700,28 720,80
+      Q 740,130 700,160
+      L 380,185
+      Q 160,195 140,150
+      Q 120,110 180,110
+      Z
+    "/>
+
+    <!-- Outer asphalt path (wider) -->
+    <path id="outerTrack" d="
+      M 175,110
+      L 480,30
+      Q 715,14 738,80
+      Q 758,140 712,172
+      L 378,198
+      Q 140,208 118,152
+      Q 95,104 175,110
+      Z
+    "/>
+
+    <!-- Inner grass path -->
+    <path id="innerTrack" d="
+      M 195,110
+      L 480,56
+      Q 680,46 695,86
+      Q 712,122 682,146
+      L 384,172
+      Q 184,180 162,148
+      Q 145,118 195,110
+      Z
+    "/>
+
+  </defs>
+
+  <!-- ═══ BACKGROUND ═══ -->
+  <rect width="860" height="220" fill="url(#bgGrad)"/>
+
+  <!-- Stars / atmosphere dots -->
+  <circle cx="20" cy="15" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="55" cy="8" r="0.8" fill="#fff" opacity="0.2"/>
+  <circle cx="800" cy="12" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="840" cy="20" r="0.7" fill="#fff" opacity="0.2"/>
+  <circle cx="750" cy="6" r="1" fill="#fff" opacity="0.25"/>
+  <circle cx="100" cy="20" r="0.8" fill="#fff" opacity="0.15"/>
+
+  <!-- ═══ GRANDSTAND LEFT ═══ -->
+  <rect x="0" y="0" width="130" height="100" fill="url(#crowd)" opacity="0.8"/>
+  <!-- Stand rows -->
+  <line x1="0" y1="20" x2="130" y2="20" stroke="#111" stroke-width="1"/>
+  <line x1="0" y1="35" x2="130" y2="35" stroke="#111" stroke-width="1"/>
+  <line x1="0" y1="50" x2="130" y2="50" stroke="#111" stroke-width="1"/>
+  <line x1="0" y1="65" x2="130" y2="65" stroke="#111" stroke-width="1"/>
+  <line x1="0" y1="80" x2="130" y2="80" stroke="#111" stroke-width="1"/>
+  <!-- Crowd dots row 1 -->
+  <circle cx="10" cy="12" r="3" fill="#FF1801" opacity="0.7"/>
+  <circle cx="22" cy="12" r="3" fill="#fff" opacity="0.5"/>
+  <circle cx="34" cy="12" r="3" fill="#FF1801" opacity="0.7"/>
+  <circle cx="46" cy="12" r="3" fill="#FFD700" opacity="0.6"/>
+  <circle cx="58" cy="12" r="3" fill="#fff" opacity="0.5"/>
+  <circle cx="70" cy="12" r="3" fill="#FF1801" opacity="0.7"/>
+  <circle cx="82" cy="12" r="3" fill="#fff" opacity="0.5"/>
+  <circle cx="94" cy="12" r="3" fill="#FFD700" opacity="0.6"/>
+  <circle cx="106" cy="12" r="3" fill="#FF1801" opacity="0.7"/>
+  <circle cx="118" cy="12" r="3" fill="#fff" opacity="0.5"/>
+  <!-- Crowd dots row 2 -->
+  <circle cx="16" cy="27" r="3" fill="#fff" opacity="0.5"/>
+  <circle cx="28" cy="27" r="3" fill="#FF1801" opacity="0.6"/>
+  <circle cx="40" cy="27" r="3" fill="#fff" opacity="0.4"/>
+  <circle cx="52" cy="27" r="3" fill="#FFD700" opacity="0.5"/>
+  <circle cx="64" cy="27" r="3" fill="#FF1801" opacity="0.6"/>
+  <circle cx="76" cy="27" r="3" fill="#fff" opacity="0.5"/>
+  <circle cx="88" cy="27" r="3" fill="#FF1801" opacity="0.6"/>
+  <circle cx="100" cy="27" r="3" fill="#FFD700" opacity="0.5"/>
+  <circle cx="112" cy="27" r="3" fill="#fff" opacity="0.4"/>
+  <circle cx="124" cy="27" r="3" fill="#FF1801" opacity="0.6"/>
+  <!-- Crowd dots rows 3-5 (faded) -->
+  <circle cx="10" cy="42" r="2.5" fill="#FF1801" opacity="0.4"/>
+  <circle cx="28" cy="42" r="2.5" fill="#fff" opacity="0.3"/>
+  <circle cx="46" cy="42" r="2.5" fill="#FF1801" opacity="0.4"/>
+  <circle cx="64" cy="42" r="2.5" fill="#fff" opacity="0.3"/>
+  <circle cx="82" cy="42" r="2.5" fill="#FFD700" opacity="0.35"/>
+  <circle cx="100" cy="42" r="2.5" fill="#FF1801" opacity="0.4"/>
+  <circle cx="118" cy="42" r="2.5" fill="#fff" opacity="0.3"/>
+  <circle cx="22" cy="57" r="2" fill="#fff" opacity="0.25"/>
+  <circle cx="46" cy="57" r="2" fill="#FF1801" opacity="0.3"/>
+  <circle cx="70" cy="57" r="2" fill="#fff" opacity="0.25"/>
+  <circle cx="94" cy="57" r="2" fill="#FFD700" opacity="0.28"/>
+  <circle cx="118" cy="57" r="2" fill="#FF1801" opacity="0.3"/>
+  <circle cx="34" cy="72" r="2" fill="#fff" opacity="0.2"/>
+  <circle cx="58" cy="72" r="2" fill="#FF1801" opacity="0.25"/>
+  <circle cx="82" cy="72" r="2" fill="#fff" opacity="0.2"/>
+  <circle cx="106" cy="72" r="2" fill="#FFD700" opacity="0.22"/>
+  <!-- Stand barrier -->
+  <rect x="0" y="95" width="130" height="5" fill="#FF1801" opacity="0.6"/>
+
+  <!-- ═══ GRANDSTAND RIGHT ═══ -->
+  <rect x="730" y="0" width="130" height="85" fill="url(#crowd)" opacity="0.8"/>
+  <line x1="730" y1="18" x2="860" y2="18" stroke="#111" stroke-width="1"/>
+  <line x1="730" y1="33" x2="860" y2="33" stroke="#111" stroke-width="1"/>
+  <line x1="730" y1="48" x2="860" y2="48" stroke="#111" stroke-width="1"/>
+  <line x1="730" y1="63" x2="860" y2="63" stroke="#111" stroke-width="1"/>
+  <circle cx="740" cy="10" r="3" fill="#FF1801" opacity="0.7"/>
+  <circle cx="752" cy="10" r="3" fill="#fff" opacity="0.5"/>
+  <circle cx="764" cy="10" r="3" fill="#FFD700" opacity="0.6"/>
+  <circle cx="776" cy="10" r="3" fill="#FF1801" opacity="0.7"/>
+  <circle cx="788" cy="10" r="3" fill="#fff" opacity="0.5"/>
+  <circle cx="800" cy="10" r="3" fill="#FF1801" opacity="0.7"/>
+  <circle cx="812" cy="10" r="3" fill="#FFD700" opacity="0.6"/>
+  <circle cx="824" cy="10" r="3" fill="#fff" opacity="0.5"/>
+  <circle cx="836" cy="10" r="3" fill="#FF1801" opacity="0.7"/>
+  <circle cx="848" cy="10" r="3" fill="#fff" opacity="0.5"/>
+  <circle cx="746" cy="25" r="2.5" fill="#FFD700" opacity="0.5"/>
+  <circle cx="764" cy="25" r="2.5" fill="#FF1801" opacity="0.6"/>
+  <circle cx="782" cy="25" r="2.5" fill="#fff" opacity="0.4"/>
+  <circle cx="800" cy="25" r="2.5" fill="#FF1801" opacity="0.6"/>
+  <circle cx="818" cy="25" r="2.5" fill="#FFD700" opacity="0.5"/>
+  <circle cx="836" cy="25" r="2.5" fill="#fff" opacity="0.4"/>
+  <circle cx="752" cy="40" r="2" fill="#FF1801" opacity="0.4"/>
+  <circle cx="776" cy="40" r="2" fill="#fff" opacity="0.3"/>
+  <circle cx="800" cy="40" r="2" fill="#FFD700" opacity="0.35"/>
+  <circle cx="824" cy="40" r="2" fill="#FF1801" opacity="0.4"/>
+  <circle cx="848" cy="40" r="2" fill="#fff" opacity="0.3"/>
+  <rect x="730" y="80" width="130" height="5" fill="#FF1801" opacity="0.6"/>
+
+  <!-- ═══ OUTER TRACK (asphalt) ═══ -->
+  <path d="
+    M 175,110
+    L 480,30
+    Q 715,14 738,80
+    Q 758,140 712,172
+    L 378,198
+    Q 140,208 118,152
+    Q 95,104 175,110
+    Z
+  " fill="#1c1c1c" stroke="#2a2a2a" stroke-width="1"/>
+
+  <!-- Track surface texture lines -->
+  <path d="M 200,105 L 490,36 Q 700,22 722,82" stroke="#222" stroke-width="0.5" fill="none"/>
+  <path d="M 160,130 Q 145,118 185,112 L 490,42" stroke="#222" stroke-width="0.5" fill="none"/>
+
+  <!-- ═══ INNER GRASS ═══ -->
+  <path d="
+    M 195,110
+    L 480,56
+    Q 680,46 695,86
+    Q 712,122 682,146
+    L 384,172
+    Q 184,180 162,148
+    Q 145,118 195,110
+    Z
+  " fill="#0d1f0d"/>
+
+  <!-- Grass texture -->
+  <path d="M 210,112 L 475,62 Q 665,54 680,88" stroke="#142014" stroke-width="2" fill="none"/>
+  <path d="M 220,118 L 472,68 Q 660,60 674,92" stroke="#0f1a0f" stroke-width="1.5" fill="none"/>
+
+  <!-- Inner grass logo area -->
+  <text x="430" y="118" font-family="'Courier New',monospace" font-size="22" font-weight="bold"
+        fill="#111" text-anchor="middle" opacity="0.8" letter-spacing="3">HACKX 4.0</text>
+
+  <!-- ═══ TRACK RACING LINE (dashed white center) ═══ -->
+  <path d="
+    M 180,110
+    L 480,43
+    Q 700,30 720,82
+    Q 738,130 698,159
+    L 381,186
+    Q 162,194 141,150
+    Q 122,112 180,110
+  " fill="none" stroke="#fff" stroke-width="1.5" stroke-dasharray="12,18" opacity="0.25"/>
+
+  <!-- ═══ TRACK BORDER LINES (kerbs) ═══ -->
+  <!-- Outer kerb red/white -->
+  <path d="
+    M 172,110 L 480,28 Q 718,12 740,80 Q 762,142 714,174 L 377,200 Q 136,212 114,152 Q 90,100 172,110
+  " fill="none" stroke="#FF1801" stroke-width="2.5" opacity="0.5"
+     stroke-dasharray="8,8"/>
+
+  <!-- Inner kerb -->
+  <path d="
+    M 196,110 L 480,54 Q 681,44 697,86 Q 714,124 683,148 L 383,174 Q 182,182 160,148 Q 143,116 196,110
+  " fill="none" stroke="#fff" stroke-width="1.5" opacity="0.2" stroke-dasharray="6,6"/>
+
+  <!-- ═══ START/FINISH LINE ═══ -->
+  <rect x="174" y="98" width="18" height="24" fill="#fff" opacity="0.9" rx="1"/>
+  <!-- Checkered pattern on start line -->
+  <rect x="174" y="98" width="6" height="6" fill="#000"/>
+  <rect x="186" y="98" width="6" height="6" fill="#000"/>
+  <rect x="180" y="104" width="6" height="6" fill="#000"/>
+  <rect x="174" y="110" width="6" height="6" fill="#000"/>
+  <rect x="186" y="110" width="6" height="6" fill="#000"/>
+  <rect x="180" y="116" width="6" height="6" fill="#000"/>
+  <!-- S/F label -->
+  <text x="183" y="93" font-family="'Courier New',monospace" font-size="7" fill="#FFD700"
+        text-anchor="middle" font-weight="bold" opacity="0.9">S/F</text>
+
+  <!-- ═══ PIT LANE ENTRY/EXIT ═══ -->
+  <rect x="174" y="122" width="55" height="10" fill="#222" opacity="0.8" rx="2"/>
+  <text x="201" y="130" font-family="'Courier New',monospace" font-size="6" fill="#FFD700"
+        text-anchor="middle" letter-spacing="1">PIT LANE</text>
+
+  <!-- ═══ SECTOR MARKERS ═══ -->
+  <!-- Sector 1 -->
+  <line x1="420" y1="36" x2="420" y2="52" stroke="#9B59B6" stroke-width="2" opacity="0.8"/>
+  <text x="420" y="30" font-family="'Courier New',monospace" font-size="7" fill="#9B59B6"
+        text-anchor="middle" opacity="0.9">S1</text>
+  <!-- Sector 2 -->
+  <line x1="718" y1="120" x2="703" y2="126" stroke="#3498DB" stroke-width="2" opacity="0.8"/>
+  <text x="732" y="124" font-family="'Courier New',monospace" font-size="7" fill="#3498DB"
+        text-anchor="middle" opacity="0.9">S2</text>
+  <!-- Sector 3 -->
+  <line x1="320" y1="192" x2="320" y2="176" stroke="#2ECC71" stroke-width="2" opacity="0.8"/>
+  <text x="320" y="204" font-family="'Courier New',monospace" font-size="7" fill="#2ECC71"
+        text-anchor="middle" opacity="0.9">S3</text>
+
+  <!-- ═══ CORNER NUMBERS ═══ -->
+  <text x="490" y="24" font-family="'Courier New',monospace" font-size="8" fill="#555" text-anchor="middle">T1</text>
+  <text x="720" y="58" font-family="'Courier New',monospace" font-size="8" fill="#555" text-anchor="middle">T2</text>
+  <text x="730" y="155" font-family="'Courier New',monospace" font-size="8" fill="#555" text-anchor="middle">T3</text>
+  <text x="200" y="205" font-family="'Courier New',monospace" font-size="8" fill="#555" text-anchor="middle">T4</text>
+
+  <!-- ═══ TIRE MARKS (static drift lines) ═══ -->
+  <path d="M 195,108 Q 200,112 198,118" stroke="#333" stroke-width="3" fill="none" opacity="0.6" stroke-linecap="round"/>
+  <path d="M 700,80 Q 710,90 705,105" stroke="#333" stroke-width="3" fill="none" opacity="0.5" stroke-linecap="round"/>
+  <path d="M 690,150 Q 695,158 688,163" stroke="#333" stroke-width="2.5" fill="none" opacity="0.4" stroke-linecap="round"/>
+
+  <!-- ═══ SPEED TRAP INDICATOR ═══ -->
+  <rect x="440" y="36" width="50" height="10" fill="#111" rx="2" opacity="0.9"/>
+  <rect x="441" y="37" width="6" height="8" fill="#FF1801" rx="1">
+    <animate attributeName="opacity" values="1;0.2;1" dur="0.6s" repeatCount="indefinite"/>
+  </rect>
+  <text x="452" y="44" font-family="'Courier New',monospace" font-size="6" fill="#FFD700" letter-spacing="1">320 KM/H</text>
+
+  <!-- ═══ ANIMATED CAR WITH GLOW TRAIL ═══ -->
+
+  <!-- Glow trail dot 1 (furthest behind) -->
+  <circle r="4" fill="#FF1801" opacity="0.15" filter="url(#smokeBlur)">
+    <animateMotion dur="4s" repeatCount="indefinite" rotate="auto" keyPoints="0.92;0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.88" keyTimes="0;0.08;0.16;0.24;0.32;0.4;0.5;0.6;0.7;0.8;1" calcMode="linear">
+      <mpath href="#trackPath"/>
+    </animateMotion>
+  </circle>
+  <!-- Glow trail dot 2 -->
+  <circle r="5" fill="#FF4400" opacity="0.25" filter="url(#smokeBlur)">
+    <animateMotion dur="4s" repeatCount="indefinite" rotate="auto" keyPoints="0.94;0.02;0.12;0.22;0.32;0.42;0.52;0.62;0.72;0.82;0.90" keyTimes="0;0.08;0.16;0.24;0.32;0.4;0.5;0.6;0.7;0.8;1" calcMode="linear">
+      <mpath href="#trackPath"/>
+    </animateMotion>
+  </circle>
+  <!-- Glow trail dot 3 -->
+  <circle r="6" fill="#FF6600" opacity="0.35" filter="url(#smokeBlur)">
+    <animateMotion dur="4s" repeatCount="indefinite" rotate="auto" keyPoints="0.96;0.04;0.14;0.24;0.34;0.44;0.54;0.64;0.74;0.84;0.92" keyTimes="0;0.08;0.16;0.24;0.32;0.4;0.5;0.6;0.7;0.8;1" calcMode="linear">
+      <mpath href="#trackPath"/>
+    </animateMotion>
+  </circle>
+  <!-- Main glow -->
+  <circle r="10" fill="url(#hotGlow)">
+    <animateMotion dur="4s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#trackPath"/>
+    </animateMotion>
+  </circle>
+
+  <!-- ═══ THE CAR ═══ -->
+  <g>
+    <animateMotion dur="4s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#trackPath"/>
+    </animateMotion>
+    <!-- Body -->
+    <path d="M -14,2 L -14,-2 L 6,-4 L 12,-1 L 12,1 L 6,4 Z" fill="#CC1100"/>
+    <path d="M -14,2 L -14,-2 L 2,-3 L 8,-1 L 8,1 L 2,3 Z" fill="#FF2200" opacity="0.6"/>
+    <!-- Nose -->
+    <polygon points="-14,-1.5 -14,1.5 -20,0" fill="#880000"/>
+    <!-- Cockpit -->
+    <path d="M -4,-2 Q 1,-5 7,-4 L 8,-1 L 8,1 L 7,4 Q 1,5 -4,2 Z" fill="#111827"/>
+    <!-- Halo -->
+    <path d="M -2,-2.5 Q 4,-6 9,-3" stroke="#B8960C" stroke-width="1.2" fill="none"/>
+    <!-- Rear wing -->
+    <rect x="10" y="-4" width="5" height="1.2" fill="#FF1801"/>
+    <rect x="10" y="2.8" width="5" height="1.2" fill="#FF1801"/>
+    <rect x="14" y="-4" width="1.2" height="8" fill="#880000"/>
+    <!-- Front wing -->
+    <rect x="-22" y="-3" width="9" height="1" fill="#CC1100"/>
+    <rect x="-22" y="2" width="9" height="1" fill="#CC1100"/>
+    <!-- Wheels -->
+    <circle cx="-10" cy="-3.5" r="2.5" fill="#111"/>
+    <circle cx="-10" cy="3.5"  r="2.5" fill="#111"/>
+    <circle cx="8"  cy="-3"   r="2.5" fill="#111"/>
+    <circle cx="8"  cy="3"    r="2.5" fill="#111"/>
+    <!-- Exhaust -->
+    <ellipse cx="-12" cy="0" rx="2.5" ry="1.2" fill="#FF6600" opacity="0.8"/>
+    <!-- Number -->
+    <text x="1" y="1" font-family="monospace" font-size="3" font-weight="bold"
+          fill="#FFD700" text-anchor="middle">4</text>
+  </g>
+
+  <!-- ═══ TOP HUD ═══ -->
+  <rect x="0" y="0" width="860" height="2" fill="#FF1801" opacity="0.8"/>
+  <rect x="0" y="218" width="860" height="2" fill="#FF1801" opacity="0.6"/>
+
+  <!-- Lap counter HUD -->
+  <rect x="376" y="0" width="108" height="18" fill="#111" opacity="0.9" rx="0"/>
+  <text x="430" y="13" font-family="'Courier New',monospace" font-size="9" fill="#FFD700"
+        text-anchor="middle" letter-spacing="3" font-weight="bold">LAP 1 / 1</text>
+
+  <!-- Speed HUD top right -->
+  <rect x="760" y="88" width="80" height="28" fill="#0a0a0a" opacity="0.9" rx="2" stroke="#222" stroke-width="1"/>
+  <text x="800" y="101" font-family="'Courier New',monospace" font-size="8" fill="#888"
+        text-anchor="middle" letter-spacing="2">SPEED</text>
+  <text x="800" y="113" font-family="'Courier New',monospace" font-size="11" fill="#FF1801"
+        text-anchor="middle" font-weight="bold">
+    <animate attributeName="textContent" values="312;318;305;322;315;308;320" dur="4s" repeatCount="indefinite"/>
+    320
+  </text>
+
+  <!-- DRS indicator -->
+  <rect x="760" y="120" width="80" height="14" fill="#0a0a0a" opacity="0.9" rx="2" stroke="#222" stroke-width="1"/>
+  <text x="785" y="130" font-family="'Courier New',monospace" font-size="9" fill="#555"
+        text-anchor="middle" letter-spacing="1">DRS</text>
+  <rect x="795" y="122" width="40" height="10" fill="#00AA44" rx="1" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.2;0.9" dur="1.5s" repeatCount="indefinite"/>
+  </rect>
+  <text x="815" y="130" font-family="'Courier New',monospace" font-size="7" fill="#fff"
+        text-anchor="middle">OPEN</text>
+
+  <!-- ERS bar -->
+  <rect x="760" y="138" width="80" height="14" fill="#0a0a0a" opacity="0.9" rx="2" stroke="#222" stroke-width="1"/>
+  <text x="774" y="148" font-family="'Courier New',monospace" font-size="7" fill="#555">ERS</text>
+  <rect x="787" y="140" width="47" height="8" fill="#111" rx="1"/>
+  <rect x="787" y="140" width="38" height="8" fill="#3498DB" rx="1" opacity="0.8">
+    <animate attributeName="width" values="38;45;30;47;38" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Tire compound indicator -->
+  <circle cx="60" cy="195" r="12" fill="#111" stroke="#333" stroke-width="1"/>
+  <circle cx="60" cy="195" r="9" fill="#FF1801" opacity="0.9"/>
+  <text x="60" y="199" font-family="'Courier New',monospace" font-size="8" fill="#fff"
+        text-anchor="middle" font-weight="bold">S</text>
+  <text x="60" y="214" font-family="'Courier New',monospace" font-size="6" fill="#888"
+        text-anchor="middle">SOFT</text>
+
+  <!-- Sector times bottom left -->
+  <rect x="0" y="155" width="110" height="60" fill="#0a0a0a" opacity="0.9" rx="2" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="8" y="168" font-family="'Courier New',monospace" font-size="7" fill="#9B59B6" letter-spacing="1">S1  0:23.4</text>
+  <text x="8" y="181" font-family="'Courier New',monospace" font-size="7" fill="#3498DB" letter-spacing="1">S2  0:31.2</text>
+  <text x="8" y="194" font-family="'Courier New',monospace" font-size="7" fill="#2ECC71" letter-spacing="1">S3  0:28.8</text>
+  <text x="8" y="208" font-family="'Courier New',monospace" font-size="8" fill="#FFD700" font-weight="bold" letter-spacing="1">LAP 1:23.4</text>
+
+</svg>
