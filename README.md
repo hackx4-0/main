@@ -1,4 +1,4 @@
-<div align="center"><img src="f1-drift.svg" width="860" alt="F1 Car Drifting Animation"/></div>
+<div align="center"><img src="banner.svg" width="860" alt="HackX 4.0 Banner"/></div>
 
 <div align="center">
 
