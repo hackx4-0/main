@@ -1,14 +1,8 @@
-<div align="center"><img src="banner.svg" width="860" alt="HackX 4.0 Banner"/></div> 
+<div align="center"><img src="f1car.svg" width="860" alt="F1 Car Drifting"/></div>
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=13&duration=50&pause=2000&color=FF1801&center=true&vCenter=true&width=860&lines=🏎️+%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA)](https://git.io/typing-svg)
-
-<br/>
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=72&duration=1000&pause=99999&color=FF1801&center=true&vCenter=true&width=900&height=120&lines=HACKX+4.0)](https://git.io/typing-svg)
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=16&duration=1000&pause=99999&color=FFD700&center=true&vCenter=true&width=700&height=35&lines=BUILD.+RACE.+WIN.+——+NMIMS+NAVI+MUMBAI)](https://git.io/typing-svg)
+<img src="banner.svg" width="860" alt="HackX 4.0"/>
 
 <br/>
 
@@ -16,10 +10,6 @@
 ![](https://img.shields.io/badge/DURATION-24%20HOURS-FFD700?style=for-the-badge&labelColor=0d0d0d)
 ![](https://img.shields.io/badge/TEAM-2–4%20MEMBERS-FF6B35?style=for-the-badge&labelColor=0d0d0d)
 ![](https://img.shields.io/badge/PRIZE%20POOL-₹75%2C000-00D4FF?style=for-the-badge&labelColor=0d0d0d)
-
-<br/>
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=13&duration=50&pause=2000&color=FF1801&center=true&vCenter=true&width=860&lines=🏎️+%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%ba%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA%E2%80%BA)](https://git.io/typing-svg)
 
 </div>
 
